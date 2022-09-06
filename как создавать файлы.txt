@@ -1,0 +1,12 @@
+Открыть cmd командная строка
+
+PS C:\User\> cd .. 					переход на католог выше (PS C:\)
+
+PS C:\User\> cd .\Desktop\                        	перейти в эту папку
+PS C:\User\Desktop\> md client-siple              	создание папки в проводнике
+PS C:\User\> cd .\Desktop\> cd .\client-siple\    	перейти в эту папку 
+PS C:\User\> cd .\Desktop\client-siple\> npm init 	инициализация приложения
+entry point:(index.js) client.js		  	название файла
+PS C:\User\> cd .\Desktop\client-siple\>npm i ws  	установка библиотеки websocket 
+PS C:\User\> cd .\Desktop\client-siple\>code client.js 	создание файла
+
