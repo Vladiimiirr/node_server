@@ -1,8 +1,14 @@
 const WebSocket = require('ws');
 
-const serverAddress = "ws://127.0.0.1:5000";
+const serverAddress = "wss:nonstop-glen-veil.glitch.me";
+//const serverAddress = "wss:simple-websocket-server-echo.glitch.me";
 
-const ws = new WebSocket(serverAddress); //создание объета и передча адреса
+
+const ws = new WebSocket(serverAddress, {
+    headers:{
+        "user-agent": "Mozilla"
+    }
+}); //создание объета и передча адреса
 //простой клиент для подключения, до 6 строчки
 
 ws.on('open', function (){
